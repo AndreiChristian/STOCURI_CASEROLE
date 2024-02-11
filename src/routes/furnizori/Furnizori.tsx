@@ -6,19 +6,8 @@ import { addDoc, collection, getDocs } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import DeleteFurnizorDialog from "./DeleteFurnizorDialog"
 import CreateFurnizorDialog from "./CreateFurnizorDialog"
-import { Skeleton } from "@/components/ui/skeleton"
+import { SkeletonCard } from "@/components/SkeletonTable"
 
-export function SkeletonCard() {
-  return (
-    <div className="flex flex-col space-y-3">
-      <Skeleton className="h-[50px] w-full rounded-xl" />
-      <Skeleton className="h-[50px] w-full rounded-xl" />
-      <Skeleton className="h-[50px] w-full rounded-xl" />
-      <Skeleton className="h-[50px] w-full rounded-xl" />
-      <Skeleton className="h-[50px] w-full rounded-xl" />
-    </div>
-  )
-}
 
 export default function Furnizori() {
 

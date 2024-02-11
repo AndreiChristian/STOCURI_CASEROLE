@@ -4,6 +4,10 @@ import { NavLink, Outlet } from "react-router-dom"
 
 const links = [
   {
+    text: "Produse",
+    href: "/produse"
+  },
+  {
     text: "Furnizori",
     href: "/furnizori"
   },
