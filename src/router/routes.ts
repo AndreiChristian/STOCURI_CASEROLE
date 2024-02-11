@@ -1,4 +1,5 @@
 import App from "@/App";
+import Login from "@/auth/Login";
 import { Root } from "@/layout/Root";
 import Home from "@/routes/Home";
 import Settings from "@/routes/Settings";
@@ -33,4 +34,8 @@ export const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "/login",
+    Component: Login
+  }
 ])
